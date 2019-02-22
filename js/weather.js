@@ -29,7 +29,7 @@ class Weather {
   }
 
   fetchWeather(callback) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.location}&units=metric&appid=50a34e070dd5c09a99554b57ab7ea7e2`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.location}&units=imperial&appid=50a34e070dd5c09a99554b57ab7ea7e2`)
       .then(res  => res.json())
       .then(json => JSON.stringify(json))
       .then(json => JSON.parse(json))
